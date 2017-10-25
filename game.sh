@@ -7,5 +7,5 @@ elif [ "$#" -eq 1 ]; then
 	# Have a bot fight itself
 	./halite -d "240 160" "python3 $1.py" "python3 $1.py"
 else
-	echo "Usage: ./run_game.sh <bot-name> [opponent-bot-name]"
+	echo "Usage: ./game.sh <bot-name> [opponent-bot-name]"
 fi
