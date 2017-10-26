@@ -3,6 +3,9 @@ halite.exe
 *.log
 *.hlt
 
+# vagrant
+.vagrant
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
