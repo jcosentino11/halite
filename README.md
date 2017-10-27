@@ -1,5 +1,5 @@
 # halite
-Collection of bots created for the Halite II competition
+Collection of bots created for the [Halite II](https://halite.io) competition
 
 ## Setup
 ```
