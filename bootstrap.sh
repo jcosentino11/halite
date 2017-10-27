@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+PYTHON_VERSION=3.6.3
+
 # Install dependencies
 if [ ! -f ~/.bootstrap-lock ]; then
 	sudo apt-get update
@@ -19,7 +21,15 @@ if [ ! -f ~/.bootstrap-lock ]; then
 	export PATH="~/.pyenv/bin:$PATH"
 	eval "$(pyenv init -)"
 
-	pyenv install 3.6.3
+  	# Install python make it default python shell
+	pyenv install ${PYTHON_VERSION}
+	pyenv shell ${PYTHON_VERSION}
+
+	# Install pipenv and initialize it in project dir
+	pip install pipenv
+	cd /vagrant
+	pipenv install 
+	cd -
 
 	touch ~/.bootstrap-lock
 fi
