@@ -4,7 +4,11 @@ Collection of bots created for the Halite II competition
 ## Setup
 ```
 vagrant up
+vagrant ssh
+cd /vagrant
 ```
+
+Vagrant will take care of installing a python environment, as well as Halite CLI.
 
 ## Usage
 
