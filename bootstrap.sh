@@ -31,6 +31,8 @@ if [ ! -f ~/.bootstrap-lock ]; then
 	pipenv install 
 	cd -
 
+	pip install invoke
+
 	touch ~/.bootstrap-lock
 fi
 

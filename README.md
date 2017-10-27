@@ -10,16 +10,45 @@ cd /vagrant
 
 Vagrant will take care of installing a python environment, as well as Halite CLI.
 
-## Usage
+## Run the game
 
-Run game with two competing bots
-```
-./game.sh <bot name> <other bot name>
-```
+To run the game, invoke the `game` task
 
-Run game where bot faces itself
 ```
-./game.sh <bot name>
+invoke game --bot1 Bot1Name --bot2 Bot2Name
 ```
 
-See more details at https://halite.io/learn-programming-challenge/halite-cli-and-tools/cli.
+See `Task Execution` section for more details on invoking tasks.
+
+## Development
+
+### Task Execution
+
+This project utilizes [Invoke](http://www.pyinvoke.org) for task execution.
+
+#### Game
+
+Run the game using two bots
+
+```
+invoke game --bot1 Bot1Name --bot2 Bot2Name
+```
+
+#### Clean
+
+Remove clutter files (e.g. logs)
+
+```
+invoke clean
+```
+
+
+### Package Install
+
+To install a python package, use pipenv:
+
+```
+pipenv install  some-package
+```
+
+Note that both `Pipfile` and `Pipfile.lock` are checked in.
