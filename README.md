@@ -6,6 +6,7 @@ Collection of bots created for the [Halite II](https://halite.io) competition
 vagrant up
 vagrant ssh
 cd /vagrant
+pipenv shell
 ```
 
 Vagrant will take care of installing a python environment, as well as Halite CLI.
